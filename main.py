@@ -1,10 +1,17 @@
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from ProjectStructure.UI.App import App
 
 
-# Press the green button in the gutter to run the script.
+class Main():
+
+    def __init__(self):
+        self.application = App()
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    #     # try:
+    #     #     with open('phone-book.txt', 'x'):
+    #     #         pass
+    #     # except FileExistsError:
+    #     #     pass
+    programm = Main()
+    programm.application.menu()
